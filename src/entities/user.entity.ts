@@ -4,6 +4,6 @@ import {Column ,Entity,PrimaryGeneratedColumn,BaseEntity}  from 'typeorm'
 export class UserEntity extends BaseEntity{
     @PrimaryGeneratedColumn()
     id:number  //主键
-    @Column({type:"varchar",name:"name"})
-    name:string
+    @Column({type:"varchar",name:"taskName"})
+    taskName:string
 }
