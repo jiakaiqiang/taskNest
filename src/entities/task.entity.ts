@@ -1,6 +1,6 @@
 //编写数据库的查询类
 import {Column ,Entity,PrimaryGeneratedColumn,BaseEntity}  from 'typeorm'
-@Entity('')
+@Entity('task')  //查询的表
 export class TaskEntity extends BaseEntity{
     @PrimaryGeneratedColumn()
     id:number  //主键
