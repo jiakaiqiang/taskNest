@@ -1,5 +1,5 @@
 import { Controller, Get,Post,Request } from '@nestjs/common';
-import { AppService,userService } from './app.service';
+import { AppService} from './app.service';
 
 @Controller('app')
 export class AppController {
@@ -13,12 +13,12 @@ export class AppController {
 
 
 
-@Controller('user')
-export class userController {
-  constructor(private readonly userService: userService) {}
+// @Controller('users')
+// export class userController {
+//   constructor(private readonly userService: userService) {}
 
-  @Post('getuserName')
-  getUserName(@Request() req): object {
-    return this.userService.getAssignUserName(req);
-  }
-}
+//   @Post('getuserName')
+//   getUserName(@Request() req): object {
+//     return this.userService.getAssignUserName(req);
+//   }
+// }
